@@ -15,7 +15,7 @@ class HouseInput(BaseModel):
 
 @app.get("/")
 def home():
-    return {"msg":"FastAPI houseprice pediction project"}
+    return {"msg":"FastAPI houseprice prediction project"}
 
 @app.post("/ratepredict")
 def predict_price(data: HouseInput):
